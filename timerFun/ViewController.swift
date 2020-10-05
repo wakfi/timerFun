@@ -8,9 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController 
+{
 
-  override func viewDidLoad() {
+  @IBOutlet var timeLabel: UILabel!
+  
+  @IBAction func startPressed(_ sender: UIButton) 
+  {
+    print("start")
+  }
+  
+  @IBAction func pausePressed(_ sender: UIButton) 
+  {
+    print("pause")
+  }
+  
+  @IBAction func resetPressed(_ sender: UIButton) 
+  {
+    print("reset")
+  }
+  
+  override func viewDidLoad() 
+  {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
   }
